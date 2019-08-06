@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["define"],"mappings":";;;;;;;AAAAA,QACC,YACA,eACA,eACA,mBACC","file":"../main.js","sourcesContent":["define([\r\n\t\"./timeago\",\r\n\t\"./locales/en\",\r\n\t\"./locales/ja\",\r\n\t\"./locales/zh-CN\"\r\n],function(){\r\n\r\n});"]}
