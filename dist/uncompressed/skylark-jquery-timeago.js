@@ -108,6 +108,7 @@ define('skylark-jquery-timeago/timeago',["skylark-jquery"],function ($) {
       localeTitle: false,
       cutoff: 0,
       autoDispose: true,
+      showTimeOnFull : false,
       strings: {
         prefixAgo: null,
         prefixFromNow: null,
@@ -259,7 +260,11 @@ define('skylark-jquery-timeago/timeago',["skylark-jquery"],function ($) {
         $(this).text(inWords(data.datetime));
       } else {
         if ($(this).attr('title').length > 0) {
-            $(this).text($(this).attr('title'));
+            var txt = $(this).attr('title');
+            if (!$s.showTimeOnFull) {
+              txt = txt.split(" ")[0];
+            }
+            $(this).text(txt);
         }
       }
     }
