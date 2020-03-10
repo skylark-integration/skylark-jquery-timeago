@@ -19,6 +19,13 @@
   "bugs": {
     "url": "https://github.com/skylark-integration/skylark-jquery-timeago/issues"
   },
+  "files": [
+    "demos/",
+    "dist/",
+    "src/",
+    "skins/",
+    "thems/",
+  ],  
   "license": "MIT",
   "dependencies": {
     "skylark-jquery": "git+https://github.com/skylark-integration/skylark-jquery.git#master",
